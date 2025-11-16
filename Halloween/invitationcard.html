@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Halloween Invitation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      width: 60%;
+      margin: 100px auto;
+      padding: 30px;
+      background: rgba(255, 140, 0, 0.1);
+      border: 2px solid orange;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 20px orange;
+    }
+
+    h1 {
+      color: orange;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .bat {
+      position: absolute;
+      top: 50px;
+      left: -200px;
+      width: 150px;
+      animation: fly 10s linear infinite;
+    }
+
+    @keyframes fly {
+      0% { left: -200px; top: 60px; transform: scaleX(1); }
+      50% { left: 70vw; top: 120px; transform: scaleX(1); }
+      51% { transform: scaleX(-1); }
+      100% { left: -200px; top: 60px; transform: scaleX(-1); }
+    }
+  </style>
+</head>
+<body>
+  <img src="../Img&Vid/bat.png" alt="Flying Bat" class="bat">
+
+  <div class="card">
+    <h1>🎃 Halloween Night Party 🎃</h1>
+    <p>You're invited to a spooky celebration full of surprises!</p>
+    <p>🕛 Date: October 31st, 8:00 PM<br>
+       🏚️ Location: Haunted Mansion, Darkwood Street</p>
+    <p>Put on your scariest costume and come join us... if you dare!</p>
+  </div>
+</body>
+</html>

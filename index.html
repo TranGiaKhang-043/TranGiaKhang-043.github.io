@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>My Web Projects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 300px;
+    }
+
+    a.button {
+      text-decoration: none;
+      background-color: #f39c12;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #d35400;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-    <p>Hello</p>
+  <h1>🌐 My Web Projects</h1>
+  <div class="button-container">
+    <a class="button" href="#" target="_blank">📄 Curriculum Vitae (CV)</a>
+    <a class="button" href="#" target="_blank">🐠 Fish Tank Animation</a>
+    <a class="button" href="#" target="_blank">🎃 Halloween Invitation</a>
+  </div>
+  <footer>
+    Created by [Your Name] – Web Design Class
+  </footer>
 </body>
 </html>
