@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ cá vui nhộn</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #content {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to top, #3f9ea3, #87cefa);
+    }
+    #shark, #turtle, #diver1, #diver2, #diver3, #faintSchool, #goldFishSchool {
+      position: absolute;
+    }
+    #shark {
+      left: 100px; top: 400px;
+      animation: Shark 10s linear infinite;
+    }
+    #turtle {
+      left: 0px; top: 350px;
+      animation: Turtle 15s linear infinite;
+    }
+    #diver1 {
+      left: 0px; top: 300px;
+      animation: Diver1 8s linear infinite;
+    }
+    #diver2 {
+      left: 0px; top: 200px;
+      animation: Diver2 12s linear infinite;
+    }
+    #diver3 {
+      left: 0px; top: 100px;
+      animation: Diver3 10s linear infinite;
+    }
+    #faintSchool {
+      left: 0px; top: 250px;
+      animation: FaintSchool 20s linear infinite;
+    }
+    #goldFishSchool {
+      left: 0px; top: 180px;
+      animation: GoldFish 18s linear infinite;
+    }
+
+    @keyframes Shark {
+      0% {left: 100px; top: 400px;}
+      20% {left: 300px; top: 400px;}
+      40% {left: 500px; top: 300px;}
+      50% {left: 600px; top: 50px;}
+      60% {left: 600px; top: 100px;}
+      80% {left: 500px; top: 200px;}
+      100% {left: 100px; top: 400px; transform: scaleX(-1);}
+    }
+    @keyframes Turtle {
+      0% {left: 0px; top: 350px;}
+      100% {left: 100vw; top: 350px;}
+    }
+    @keyframes Diver1 {
+      0% {left: 0px; top: 300px;}
+      100% {left: 100vw; top: 300px;}
+    }
+    @keyframes Diver2 {
+      0% {left: 0px; top: 200px;}
+      100% {left: 100vw; top: 200px;}
+    }
+    @keyframes Diver3 {
+      0% {left: 0px; top: 100px;}
+      100% {left: 100vw; top: 100px;}
+    }
+    @keyframes FaintSchool {
+      0% {left: 0px; top: 250px;}
+      100% {left: 100vw; top: 250px;}
+    }
+    @keyframes GoldFish {
+      0% {left: 0px; top: 180px;}
+      100% {left: 100vw; top: 180px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div id="shark"><img src="../Img&Vid/shark.png" width="auto" height="80"></div>
+    <div id="turtle"><img src="../Img&Vid/turtle.png" width="auto" height="60"></div>
+    <div id="diver1"><img src="../Img&Vid/diver1.png" width="auto" height="60"></div>
+    <div id="diver2"><img src="../Img&Vid/diver2.png" width="auto" height="60"></div>
+    <div id="diver3"><img src="../Img&Vid/diver3.png" width="auto" height="60"></div>
+    <div id="faintSchool"><img src="../Img&Vid/faintSchool.png" width="auto" height="50"></div>
+    <div id="goldFishSchool"><img src="../Img&Vid/goldFishSchool.png" width="auto" height="50"></div>
+  </div>
+</body>
+</html>
